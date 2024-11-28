@@ -21,7 +21,7 @@ public class BestAnswerAlexaQAClientTest {
     public void introspection_bestAnswerAlexaQAClient_hasConstructorWithClient() {
         // GIVEN
         Class<?> bestAnswerAlexaQAClientClass = getClassForName(
-                "com.amazon.ata.designcomposition.prework.BestAnswerAlexaQAClient");
+                "com.amazon.ata.designcomposition.BestAnswerAlexaQAClient");
 
         // WHEN
         Constructor<?> findBestAnswerMethod = null;
@@ -41,7 +41,7 @@ public class BestAnswerAlexaQAClientTest {
     public void introspection_bestAnswerAlexaQAClient_hasFindBestAnswerMethod() {
         // GIVEN
         Class<?> bestAnswerAlexaQAClientClass = getClassForName(
-            "com.amazon.ata.designcomposition.prework.BestAnswerAlexaQAClient");
+            "com.amazon.ata.designcomposition.BestAnswerAlexaQAClient");
 
         // WHEN
         Method findBestAnswerMethod = null;
@@ -62,7 +62,7 @@ public class BestAnswerAlexaQAClientTest {
     public void introspection_bestAnswerAlexaQAClient_hasSubmitQuestionAnswerSuggestions() {
         // GIVEN
         Class<?> bestAnswerAlexaQAClientClass = getClassForName(
-            "com.amazon.ata.designcomposition.prework.BestAnswerAlexaQAClient");
+            "com.amazon.ata.designcomposition.BestAnswerAlexaQAClient");
 
         // WHEN
         Method submitQuestionAnswerSuggestionsMethod = null;
@@ -83,7 +83,7 @@ public class BestAnswerAlexaQAClientTest {
     public void introspection_readOnlyAlexaQAClient_isNotAlexaQAClient() {
         // GIVEN
         Class<?> bestAnswerAlexaQAClientClass = getClassForName(
-            "com.amazon.ata.designcomposition.prework.BestAnswerAlexaQAClient");
+            "com.amazon.ata.designcomposition.BestAnswerAlexaQAClient");
 
         // WHEN
         boolean isAlexaQAClient = AlexaQAClient.class.isAssignableFrom(bestAnswerAlexaQAClientClass);
