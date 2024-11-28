@@ -1,8 +1,18 @@
 package com.amazon.ata.designcomposition;
 
-public class ReadOnlyAlexaQAClient extends AlexaQAClient {
-    @Override
-    public void submitQuestionAnswerSuggestion(AlexaQuestion question, AlexaAnswer answer) {
-        // Do nothing
+import java.util.ArrayList;
+import java.util.List;
+
+public class ReadOnlyAlexaQAClient {
+    private final AlexaQAClient client;
+
+    public ReadOnlyAlexaQAClient (AlexaQAClient client) {
+        this.client = client;
     }
+
+
+    public List<AlexaAnswer> findAnswers(AlexaQuestion question) {
+        return client.findAnswers(question);
+    }
+
 }

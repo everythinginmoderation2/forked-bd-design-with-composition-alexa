@@ -3,7 +3,7 @@ package com.amazon.ata.designcomposition;
 /**
  * Class representing an answer provided by Alexa question answering service.
  * The answer comes with an answer quality measure which indicates how likely it is
- * that the provided answer will correct for the given question.
+ * that the provided answer will be correct for the given question.
  */
 public class AlexaAnswer {
     // Actual answer
