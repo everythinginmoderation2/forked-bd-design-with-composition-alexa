@@ -87,16 +87,17 @@ class TranslatedAlexaQAClientTest {
 
     // Actual test, uncomment after implementation of TranslatedAlexaQAClient is done
 
-//    @Test
-//    public void findBestAnswer_anyQuestion_expectedTranslation() {
-//        // GIVEN
-//        TranslatedAlexaQAClient client = new TranslatedAlexaQAClient(new BestAnswerAlexaQAClient(new AlexaQAClient()), new AlexaTranslator());
-//
-//        // WHEN
-//        String answer = client.findBestAnswerAndTranslate(new AlexaQuestion("random question", 1L));
-//
-//        // THEN
-//        assertEquals("Que la fuerza este con usted.", answer);
-//    }
+    @Test
+    public void findBestAnswer_anyQuestion_expectedTranslation() {
+        // GIVEN
+        TranslatedAlexaQAClient client = new TranslatedAlexaQAClient(new BestAnswerAlexaQAClient(new AlexaQAClient()), new AlexaTranslator());
+
+        // WHEN
+        String answer = client.findBestAnswerAndTranslate(new AlexaQuestion("random question", 1L));
+
+
+        // THEN
+        assertEquals("Que la fuerza este con usted.", answer);
+    }
 
 }

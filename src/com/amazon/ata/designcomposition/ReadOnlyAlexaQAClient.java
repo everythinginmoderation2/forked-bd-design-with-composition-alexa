@@ -1,6 +1,5 @@
 package com.amazon.ata.designcomposition;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ReadOnlyAlexaQAClient {
